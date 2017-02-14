@@ -77,4 +77,36 @@ public class ProducerManager: NSObject {
         
         return producer
     }
+    
+    /**
+     Get all producers
+     */
+    func getAllProducers() -> NSArray? {
+        
+        let request: NSFetchRequest<Producer> = NSFetchRequest(entityName: "Producer")
+        
+        let results = try! appDelegate.managedObjectContext!.fetch(request) as NSArray
+        
+        return results
+    }
+    
+    /**
+     Search for producers
+     */
+    func getProducerWithName(name: String) -> NSArray? {
+        
+        let request: NSFetchRequest<Producer> = NSFetchRequest(entityName: "Producer")
+        
+        let predicate = NSPredicate(format: "producerName CONTAINS[cd] %@", name)
+
+        let sortDescriptor = NSSortDescriptor(key: "producerName", ascending: true)
+        
+        request.sortDescriptors = [sortDescriptor]
+        
+        request.predicate = predicate
+
+        let results = try! appDelegate.managedObjectContext!.fetch(request) as NSArray
+        
+        return results
+    }
 }
