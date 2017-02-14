@@ -8,13 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		12C110671E530A3D00C67912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110661E530A3D00C67912 /* AppDelegate.swift */; };
-		12C110691E530A3D00C67912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110681E530A3D00C67912 /* ViewController.swift */; };
 		12C1106C1E530A3D00C67912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C1106A1E530A3D00C67912 /* Main.storyboard */; };
 		12C1106F1E530A3D00C67912 /* App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12C1106D1E530A3D00C67912 /* App.xcdatamodeld */; };
 		12C110711E530A3D00C67912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C110701E530A3D00C67912 /* Assets.xcassets */; };
 		12C110741E530A3D00C67912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C110721E530A3D00C67912 /* LaunchScreen.storyboard */; };
 		12C1107F1E530A3D00C67912 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C1107E1E530A3D00C67912 /* AppTests.swift */; };
 		12C1108A1E530A3E00C67912 /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110891E530A3E00C67912 /* AppUITests.swift */; };
+		12C1109D1E530BED00C67912 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C1109C1E530BED00C67912 /* NetworkRequest.swift */; };
+		12C110AB1E5310B800C67912 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110A21E5310B800C67912 /* SVIndefiniteAnimatedView.m */; };
+		12C110AC1E5310B800C67912 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110A21E5310B800C67912 /* SVIndefiniteAnimatedView.m */; };
+		12C110AD1E5310B800C67912 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110A21E5310B800C67912 /* SVIndefiniteAnimatedView.m */; };
+		12C110AE1E5310B800C67912 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110A41E5310B800C67912 /* SVProgressAnimatedView.m */; };
+		12C110AF1E5310B800C67912 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110A41E5310B800C67912 /* SVProgressAnimatedView.m */; };
+		12C110B01E5310B800C67912 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110A41E5310B800C67912 /* SVProgressAnimatedView.m */; };
+		12C110B11E5310B800C67912 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 12C110A61E5310B800C67912 /* SVProgressHUD.bundle */; };
+		12C110B21E5310B800C67912 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 12C110A61E5310B800C67912 /* SVProgressHUD.bundle */; };
+		12C110B31E5310B800C67912 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 12C110A61E5310B800C67912 /* SVProgressHUD.bundle */; };
+		12C110B41E5310B800C67912 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110A81E5310B800C67912 /* SVProgressHUD.m */; };
+		12C110B51E5310B800C67912 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110A81E5310B800C67912 /* SVProgressHUD.m */; };
+		12C110B61E5310B800C67912 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110A81E5310B800C67912 /* SVProgressHUD.m */; };
+		12C110B71E5310B800C67912 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110AA1E5310B800C67912 /* SVRadialGradientLayer.m */; };
+		12C110B81E5310B800C67912 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110AA1E5310B800C67912 /* SVRadialGradientLayer.m */; };
+		12C110B91E5310B800C67912 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C110AA1E5310B800C67912 /* SVRadialGradientLayer.m */; };
+		12C110BC1E53151600C67912 /* ProducersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110BB1E53151600C67912 /* ProducersVC.swift */; };
+		12C110BD1E53151600C67912 /* ProducersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110BB1E53151600C67912 /* ProducersVC.swift */; };
+		12C110BE1E53151600C67912 /* ProducersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110BB1E53151600C67912 /* ProducersVC.swift */; };
+		12C110C01E53156200C67912 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110BF1E53156200C67912 /* Constants.swift */; };
+		12C110C11E53156200C67912 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110BF1E53156200C67912 /* Constants.swift */; };
+		12C110C21E53156200C67912 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110BF1E53156200C67912 /* Constants.swift */; };
+		12C110DE1E532FFF00C67912 /* Producer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110DC1E532FFF00C67912 /* Producer+CoreDataClass.swift */; };
+		12C110DF1E532FFF00C67912 /* Producer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110DC1E532FFF00C67912 /* Producer+CoreDataClass.swift */; };
+		12C110E01E532FFF00C67912 /* Producer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110DC1E532FFF00C67912 /* Producer+CoreDataClass.swift */; };
+		12C110E11E532FFF00C67912 /* Producer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110DD1E532FFF00C67912 /* Producer+CoreDataProperties.swift */; };
+		12C110E21E532FFF00C67912 /* Producer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110DD1E532FFF00C67912 /* Producer+CoreDataProperties.swift */; };
+		12C110E31E532FFF00C67912 /* Producer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110DD1E532FFF00C67912 /* Producer+CoreDataProperties.swift */; };
+		12C110E41E53302F00C67912 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C1109C1E530BED00C67912 /* NetworkRequest.swift */; };
+		12C110E51E53303100C67912 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C1109C1E530BED00C67912 /* NetworkRequest.swift */; };
+		12C110E71E53594700C67912 /* ProducerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110E61E53594700C67912 /* ProducerCell.swift */; };
+		12C110E81E53594700C67912 /* ProducerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110E61E53594700C67912 /* ProducerCell.swift */; };
+		12C110E91E53594700C67912 /* ProducerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110E61E53594700C67912 /* ProducerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +69,6 @@
 /* Begin PBXFileReference section */
 		12C110631E530A3D00C67912 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C110661E530A3D00C67912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12C110681E530A3D00C67912 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		12C1106B1E530A3D00C67912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12C1106E1E530A3D00C67912 /* App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = App.xcdatamodel; sourceTree = "<group>"; };
 		12C110701E530A3D00C67912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +80,23 @@
 		12C110851E530A3E00C67912 /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C110891E530A3E00C67912 /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 		12C1108B1E530A3E00C67912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C1109C1E530BED00C67912 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		12C110A11E5310B800C67912 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		12C110A21E5310B800C67912 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		12C110A31E5310B800C67912 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		12C110A41E5310B800C67912 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		12C110A51E5310B800C67912 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		12C110A61E5310B800C67912 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		12C110A71E5310B800C67912 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		12C110A81E5310B800C67912 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		12C110A91E5310B800C67912 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		12C110AA1E5310B800C67912 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		12C110BA1E5310EF00C67912 /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
+		12C110BB1E53151600C67912 /* ProducersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProducersVC.swift; sourceTree = "<group>"; };
+		12C110BF1E53156200C67912 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		12C110DC1E532FFF00C67912 /* Producer+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Producer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		12C110DD1E532FFF00C67912 /* Producer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Producer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		12C110E61E53594700C67912 /* ProducerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProducerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				12C110661E530A3D00C67912 /* AppDelegate.swift */,
-				12C110681E530A3D00C67912 /* ViewController.swift */,
-				12C1106A1E530A3D00C67912 /* Main.storyboard */,
-				12C110701E530A3D00C67912 /* Assets.xcassets */,
-				12C110721E530A3D00C67912 /* LaunchScreen.storyboard */,
-				12C110751E530A3D00C67912 /* Info.plist */,
-				12C1106D1E530A3D00C67912 /* App.xcdatamodeld */,
+				12C1109B1E530B9C00C67912 /* CoreData Models */,
+				12C110991E530B7800C67912 /* ViewControllers */,
+				12C110981E530B6F00C67912 /* GUI */,
+				12C110971E530B5800C67912 /* Support Files */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -126,6 +172,72 @@
 				12C1108B1E530A3E00C67912 /* Info.plist */,
 			);
 			path = AppUITests;
+			sourceTree = "<group>";
+		};
+		12C110971E530B5800C67912 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12C1109A1E530B8900C67912 /* Vendor */,
+				12C110751E530A3D00C67912 /* Info.plist */,
+				12C110BA1E5310EF00C67912 /* App-Bridging-Header.h */,
+				12C110701E530A3D00C67912 /* Assets.xcassets */,
+				12C110BF1E53156200C67912 /* Constants.swift */,
+				12C1109C1E530BED00C67912 /* NetworkRequest.swift */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		12C110981E530B6F00C67912 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				12C110721E530A3D00C67912 /* LaunchScreen.storyboard */,
+				12C1106A1E530A3D00C67912 /* Main.storyboard */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		12C110991E530B7800C67912 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				12C110BB1E53151600C67912 /* ProducersVC.swift */,
+				12C110E61E53594700C67912 /* ProducerCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		12C1109A1E530B8900C67912 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				12C110A01E5310B800C67912 /* SVProgressHUD */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		12C1109B1E530B9C00C67912 /* CoreData Models */ = {
+			isa = PBXGroup;
+			children = (
+				12C110DD1E532FFF00C67912 /* Producer+CoreDataProperties.swift */,
+				12C110DC1E532FFF00C67912 /* Producer+CoreDataClass.swift */,
+				12C1106D1E530A3D00C67912 /* App.xcdatamodeld */,
+			);
+			name = "CoreData Models";
+			sourceTree = "<group>";
+		};
+		12C110A01E5310B800C67912 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				12C110A11E5310B800C67912 /* SVIndefiniteAnimatedView.h */,
+				12C110A21E5310B800C67912 /* SVIndefiniteAnimatedView.m */,
+				12C110A31E5310B800C67912 /* SVProgressAnimatedView.h */,
+				12C110A41E5310B800C67912 /* SVProgressAnimatedView.m */,
+				12C110A51E5310B800C67912 /* SVProgressHUD-Prefix.pch */,
+				12C110A61E5310B800C67912 /* SVProgressHUD.bundle */,
+				12C110A71E5310B800C67912 /* SVProgressHUD.h */,
+				12C110A81E5310B800C67912 /* SVProgressHUD.m */,
+				12C110A91E5310B800C67912 /* SVRadialGradientLayer.h */,
+				12C110AA1E5310B800C67912 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +353,7 @@
 				12C110741E530A3D00C67912 /* LaunchScreen.storyboard in Resources */,
 				12C110711E530A3D00C67912 /* Assets.xcassets in Resources */,
 				12C1106C1E530A3D00C67912 /* Main.storyboard in Resources */,
+				12C110B11E5310B800C67912 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C110B21E5310B800C67912 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C110B31E5310B800C67912 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +380,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C110691E530A3D00C67912 /* ViewController.swift in Sources */,
+				12C110B71E5310B800C67912 /* SVRadialGradientLayer.m in Sources */,
+				12C110E71E53594700C67912 /* ProducerCell.swift in Sources */,
 				12C1106F1E530A3D00C67912 /* App.xcdatamodeld in Sources */,
+				12C110AE1E5310B800C67912 /* SVProgressAnimatedView.m in Sources */,
+				12C1109D1E530BED00C67912 /* NetworkRequest.swift in Sources */,
+				12C110BC1E53151600C67912 /* ProducersVC.swift in Sources */,
 				12C110671E530A3D00C67912 /* AppDelegate.swift in Sources */,
+				12C110E11E532FFF00C67912 /* Producer+CoreDataProperties.swift in Sources */,
+				12C110AB1E5310B800C67912 /* SVIndefiniteAnimatedView.m in Sources */,
+				12C110B41E5310B800C67912 /* SVProgressHUD.m in Sources */,
+				12C110C01E53156200C67912 /* Constants.swift in Sources */,
+				12C110DE1E532FFF00C67912 /* Producer+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +399,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C110B81E5310B800C67912 /* SVRadialGradientLayer.m in Sources */,
 				12C1107F1E530A3D00C67912 /* AppTests.swift in Sources */,
+				12C110E21E532FFF00C67912 /* Producer+CoreDataProperties.swift in Sources */,
+				12C110B51E5310B800C67912 /* SVProgressHUD.m in Sources */,
+				12C110E51E53303100C67912 /* NetworkRequest.swift in Sources */,
+				12C110AC1E5310B800C67912 /* SVIndefiniteAnimatedView.m in Sources */,
+				12C110BD1E53151600C67912 /* ProducersVC.swift in Sources */,
+				12C110AF1E5310B800C67912 /* SVProgressAnimatedView.m in Sources */,
+				12C110E81E53594700C67912 /* ProducerCell.swift in Sources */,
+				12C110DF1E532FFF00C67912 /* Producer+CoreDataClass.swift in Sources */,
+				12C110C11E53156200C67912 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +417,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C110B91E5310B800C67912 /* SVRadialGradientLayer.m in Sources */,
 				12C1108A1E530A3E00C67912 /* AppUITests.swift in Sources */,
+				12C110E31E532FFF00C67912 /* Producer+CoreDataProperties.swift in Sources */,
+				12C110B61E5310B800C67912 /* SVProgressHUD.m in Sources */,
+				12C110E41E53302F00C67912 /* NetworkRequest.swift in Sources */,
+				12C110AD1E5310B800C67912 /* SVIndefiniteAnimatedView.m in Sources */,
+				12C110BE1E53151600C67912 /* ProducersVC.swift in Sources */,
+				12C110B01E5310B800C67912 /* SVProgressAnimatedView.m in Sources */,
+				12C110E91E53594700C67912 /* ProducerCell.swift in Sources */,
+				12C110E01E532FFF00C67912 /* Producer+CoreDataClass.swift in Sources */,
+				12C110C21E53156200C67912 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,9 +565,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33GC4W43T4;
 				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -434,9 +580,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33GC4W43T4;
 				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
