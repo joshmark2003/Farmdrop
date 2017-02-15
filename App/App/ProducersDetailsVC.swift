@@ -25,13 +25,13 @@ class ProducersDetailsVC: UIViewController, UICollectionViewDelegate, UICollecti
         
         title = currentProducer.producerName
         
+        updateView()
+
         //Update current producer
 
         Constants.httpRequestManager.requestForProducerWithId(producerId: currentProducer.producerId) { (dictionaryResponse) in
             
             Constants.producerManager.addProducers(arrProducers: ([dictionaryResponse["response"] as! NSDictionary]))
-
-            self.updateView()
         }
     }
 
