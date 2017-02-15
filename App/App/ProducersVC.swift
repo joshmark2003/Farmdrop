@@ -41,15 +41,31 @@ class ProducersVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
     func getProducersWithPageNumber() {
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-
-        Constants.httpRequestManager.requestForProducers(page: currentPage) { (dictionaryResponse: NSDictionary) in
+        
+        Constants.httpRequestManager.requestForProducers(page: currentPage) { (dictionaryResponse: NSDictionary, error: NSError?) in
             
-            self.currentPage = dictionaryResponse.value(forKeyPath: "pagination.current") as! Int
+            if error == nil {
+                
+                if dictionaryResponse.count > 0 { // handles empty dictionary
+                    
+                    self.currentPage = dictionaryResponse.value(forKeyPath: "pagination.current") as! Int
+                    
+                    self.totalPages = dictionaryResponse.value(forKeyPath: "pagination.pages") as! Int
+                    
+                    //Add producer in coreData for offline use
+                    Constants.producerManager.addProducers(arrProducers: (dictionaryResponse["response"] as! NSArray))
+                }
+                
+            } else {
             
-            self.totalPages = dictionaryResponse.value(forKeyPath: "pagination.pages") as! Int
-
-            //Add producer in coreData for offline use
-            Constants.producerManager.addProducers(arrProducers: (dictionaryResponse["response"] as! NSArray))
+                let alert = UIAlertController(title: nil, message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+                
+                let btnOk = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) -> Void in  }
+                
+                alert.addAction(btnOk)
+                
+                self.present(alert, animated: true, completion: nil)
+            }
             
             self.arrProducers = Constants.producerManager.getAllProducers() as! [Producer]
             

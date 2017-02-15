@@ -35,6 +35,13 @@ public class ProducerManager: NSObject {
                 
                 // Create a new producer
                 producerObject = NSEntityDescription.insertNewObject(forEntityName: "Producer", into: appDelegate.managedObjectContext!) as? Producer
+            } else {
+                
+                //Only update if date is different
+                if dictProducer["updated_at"] as? String ==  producerObject?.producerUpdatedAt {
+                    
+                    continue
+                }
             }
             
             producerObject!.producerId = dictProducer["id"] as! Int

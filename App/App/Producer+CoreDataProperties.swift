@@ -26,5 +26,4 @@ extension Producer {
     @NSManaged public var producerLocation: String?
     @NSManaged public var producerVia_wholesaler: String?
     @NSManaged public var producerWholesaler_name: String?
-
 }

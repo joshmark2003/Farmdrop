@@ -10,7 +10,7 @@ import UIKit
 
 class NetworkRequest: NSObject {
 
-    func requestForProducers(page: Int, completion: @escaping (_ dictionaryResponse: NSDictionary) -> Void) {
+    func requestForProducers(page: Int, completion: @escaping (_ dictionaryResponse: NSDictionary, _ error: NSError?) -> Void) {
                 
         let request = NSMutableURLRequest(url: URL(string: Constants.URL.BaseUrl.appending("?page=\(page)&per_page_limit=10"))!)
         request.httpMethod = "GET"
@@ -19,6 +19,7 @@ class NetworkRequest: NSObject {
         let session = URLSession.shared
         
         let task = session.dataTask(with: request as URLRequest) { data, response, error in
+            
             if let _ = response, let data = data {
                 
                 do {
@@ -28,7 +29,7 @@ class NetworkRequest: NSObject {
                         
                         DispatchQueue.main.async {
                             
-                            completion(dictionary)
+                            completion(dictionary, error as? NSError)
                         }
                     }
                     
@@ -36,12 +37,18 @@ class NetworkRequest: NSObject {
                     
                     DispatchQueue.main.async {
                         
+                        completion([:], error as NSError)
+
+                        print(error.localizedDescription)
                     }
                 }
             } else {
                 
                 DispatchQueue.main.async {
                     
+                    completion([:], error as? NSError)
+
+                    print(error?.localizedDescription as Any)
                 }
             }
         }

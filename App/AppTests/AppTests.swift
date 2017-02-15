@@ -33,4 +33,69 @@ class AppTests: XCTestCase {
         }
     }
     
+    func testErrorMesages() {
+        
+        let expectation = self.expectation(description: "asynchronous request")
+
+        Constants.httpRequestManager.requestForProducers(page: 1) { (dictionary: NSDictionary, error) in
+            
+            //Test internet connection
+            XCTAssertNil(error, (error?.localizedDescription)!)
+            
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectations(timeout: 10.0, handler: nil)
+    }
+    
+    func testNilOrEmptyLocation() {
+        
+        let expectation = self.expectation(description: "asynchronous request")
+        
+        Constants.httpRequestManager.requestForProducers(page: 1) { (dictionary: NSDictionary, error) in
+            
+            let arrProducers = dictionary["response"] as! NSArray
+            
+            for dictObject in arrProducers {
+                
+                let dictProducer = (dictObject as! NSDictionary)
+
+                print(dictProducer["location"] as! String)
+                
+                //Test No locations
+                XCTAssertNotNil(dictProducer["location"] as? String, "Location is nil")
+                
+                //Test if location value is empty
+                XCTAssertNotEqual(dictProducer["location"] as! String, "", "Location does not exist for this producer")
+            }
+        
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectations(timeout: 10.0, handler: nil)
+    }
+    
+    func testAtLeastOneImage() {
+        
+        let expectation = self.expectation(description: "asynchronous request")
+        
+        Constants.httpRequestManager.requestForProducers(page: 1) { (dictionary: NSDictionary, error) in
+            
+            let arrProducers = dictionary["response"] as! NSArray
+            
+            for dictObject in arrProducers {
+                
+                let dictProducer = (dictObject as! NSDictionary)
+                
+                print(dictProducer["location"] as! String)
+                
+                //Test for at least one image
+                XCTAssertGreaterThanOrEqual((dictProducer["images"] as! NSArray).count, 1, "Array should have at least one image")
+            }
+            
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectations(timeout: 10.0, handler: nil)
+    }
 }

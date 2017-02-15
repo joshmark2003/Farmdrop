@@ -30,6 +30,7 @@
 		12C110E71E53594700C67912 /* ProducerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110E61E53594700C67912 /* ProducerCell.swift */; };
 		12C110E81E53594700C67912 /* ProducerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110E61E53594700C67912 /* ProducerCell.swift */; };
 		12C110E91E53594700C67912 /* ProducerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110E61E53594700C67912 /* ProducerCell.swift */; };
+		12C110EA1E54686600C67912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110661E530A3D00C67912 /* AppDelegate.swift */; };
 		FE873C961E538F2600CC31B5 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FE873C6F1E538F2600CC31B5 /* MKAnnotationView+WebCache.m */; };
 		FE873C971E538F2600CC31B5 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = FE873C711E538F2600CC31B5 /* NSData+ImageContentType.m */; };
 		FE873C981E538F2600CC31B5 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FE873C731E538F2600CC31B5 /* NSImage+WebCache.m */; };
@@ -479,6 +480,7 @@
 				12C110E21E532FFF00C67912 /* Producer+CoreDataProperties.swift in Sources */,
 				12C110E51E53303100C67912 /* NetworkRequest.swift in Sources */,
 				12C110E81E53594700C67912 /* ProducerCell.swift in Sources */,
+				12C110EA1E54686600C67912 /* AppDelegate.swift in Sources */,
 				12C110DF1E532FFF00C67912 /* Producer+CoreDataClass.swift in Sources */,
 				12C110C11E53156200C67912 /* Constants.swift in Sources */,
 			);
