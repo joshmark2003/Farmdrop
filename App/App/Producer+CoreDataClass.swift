@@ -17,7 +17,9 @@ class Producer: NSManagedObject {
 
 public class ProducerManager: NSObject {
     
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var coreDataManager = CoreDataManager()
+    
+//    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     /**
      Add new or update producers if already saved.
@@ -34,7 +36,7 @@ public class ProducerManager: NSObject {
             if (producerObject == nil) {
                 
                 // Create a new producer
-                producerObject = NSEntityDescription.insertNewObject(forEntityName: "Producer", into: appDelegate.managedObjectContext!) as? Producer
+                producerObject = NSEntityDescription.insertNewObject(forEntityName: "Producer", into: coreDataManager.managedObjectContext) as? Producer
             } else {
                 
                 //Only update if date is different
@@ -58,11 +60,8 @@ public class ProducerManager: NSObject {
             
         }
         // Save to managed object context
-        do {
-            try appDelegate.managedObjectContext!.save()
-        } catch {
-            fatalError("Failure to save context: \(error)")
-        }
+        
+        coreDataManager.saveContext()
     }
     
     func getPrducerWithId(producerId: Int) -> Producer? {
@@ -73,7 +72,7 @@ public class ProducerManager: NSObject {
         
         request.predicate = predicate
         
-        let arrResults = try! appDelegate.managedObjectContext!.fetch(request) as NSArray
+        let arrResults = try! coreDataManager.managedObjectContext.fetch(request) as NSArray
         
         if (arrResults.count == 0) {
             
@@ -92,9 +91,15 @@ public class ProducerManager: NSObject {
         
         let request: NSFetchRequest<Producer> = NSFetchRequest(entityName: "Producer")
         
-        let results = try! appDelegate.managedObjectContext!.fetch(request) as NSArray
-        
-        return results
+        do {
+            let results = try coreDataManager.managedObjectContext.fetch(request) as NSArray
+            
+            return results
+            
+        } catch {
+            
+            return nil
+        }
     }
     
     /**
@@ -111,9 +116,15 @@ public class ProducerManager: NSObject {
         request.sortDescriptors = [sortDescriptor]
         
         request.predicate = predicate
-
-        let results = try! appDelegate.managedObjectContext!.fetch(request) as NSArray
         
-        return results
+        do {
+            let results = try coreDataManager.managedObjectContext.fetch(request) as NSArray
+            
+            return results
+
+        } catch {
+            
+            return nil
+        }
     }
 }

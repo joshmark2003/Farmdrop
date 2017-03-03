@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1254B37C1E69D0AF00234D98 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254B37A1E69C7EE00234D98 /* CoreDataManager.swift */; };
+		1254B37D1E69D0B000234D98 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254B37A1E69C7EE00234D98 /* CoreDataManager.swift */; };
+		1254B37E1E69D0B000234D98 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254B37A1E69C7EE00234D98 /* CoreDataManager.swift */; };
 		12C110671E530A3D00C67912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C110661E530A3D00C67912 /* AppDelegate.swift */; };
 		12C1106C1E530A3D00C67912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C1106A1E530A3D00C67912 /* Main.storyboard */; };
 		12C1106F1E530A3D00C67912 /* App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12C1106D1E530A3D00C67912 /* App.xcdatamodeld */; };
@@ -71,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1254B37A1E69C7EE00234D98 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		12C110631E530A3D00C67912 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C110661E530A3D00C67912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12C1106B1E530A3D00C67912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -254,6 +258,7 @@
 				12C110DD1E532FFF00C67912 /* Producer+CoreDataProperties.swift */,
 				12C110DC1E532FFF00C67912 /* Producer+CoreDataClass.swift */,
 				12C1106D1E530A3D00C67912 /* App.xcdatamodeld */,
+				1254B37A1E69C7EE00234D98 /* CoreDataManager.swift */,
 			);
 			name = "CoreData Models";
 			sourceTree = "<group>";
@@ -466,6 +471,7 @@
 				FE873C961E538F2600CC31B5 /* MKAnnotationView+WebCache.m in Sources */,
 				12C110C01E53156200C67912 /* Constants.swift in Sources */,
 				FE873CA81E538F2600CC31B5 /* UIView+WebCacheOperation.m in Sources */,
+				1254B37E1E69D0B000234D98 /* CoreDataManager.swift in Sources */,
 				FE873C981E538F2600CC31B5 /* NSImage+WebCache.m in Sources */,
 				FE873C9D1E538F2600CC31B5 /* SDWebImageDownloader.m in Sources */,
 				12C110DE1E532FFF00C67912 /* Producer+CoreDataClass.swift in Sources */,
@@ -482,6 +488,7 @@
 				12C110E81E53594700C67912 /* ProducerCell.swift in Sources */,
 				12C110EA1E54686600C67912 /* AppDelegate.swift in Sources */,
 				12C110DF1E532FFF00C67912 /* Producer+CoreDataClass.swift in Sources */,
+				1254B37D1E69D0B000234D98 /* CoreDataManager.swift in Sources */,
 				12C110C11E53156200C67912 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +502,7 @@
 				12C110E41E53302F00C67912 /* NetworkRequest.swift in Sources */,
 				12C110E91E53594700C67912 /* ProducerCell.swift in Sources */,
 				12C110E01E532FFF00C67912 /* Producer+CoreDataClass.swift in Sources */,
+				1254B37C1E69D0AF00234D98 /* CoreDataManager.swift in Sources */,
 				12C110C21E53156200C67912 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
